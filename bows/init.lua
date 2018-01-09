@@ -1,9 +1,9 @@
 bows={
 	nuke=true,
 	cluser=true,
-	pvp=minetest.setting_getbool("enable_pvp") or nil,
+	pvp=minetest.settings:get_bool("enable_pvp") or nil,
 	nitroglycerine=minetest.get_modpath("nitroglycerine")~=nil,
-	creative=minetest.setting_getbool("creative_mode"),
+	creative=minetest.settings:get_bool("creative_mode"),
 	mesecons=minetest.get_modpath("mesecons"),
 	registed_arrows={},
 	registed_bows={},
